@@ -1,3 +1,6 @@
+*body{
+    margin: 0;
+}
 /* shared */
 .display-flex {
     display: flex;
@@ -149,6 +152,85 @@
     cursor: pointer;
 }
 
+/* plants lover */
+
+.plants-lover {
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 150px;
+    gap: 60px;
+}
+
+.plants-lover img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.plants-lover-tittle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.plants-lover-description ul {
+    padding-left: 20px;
+
+}
+
+.plants-lover-description li {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+.line-break {
+    display: block;
+}
+
+.join {
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.join-tittle{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom:20px;
+}
+.join-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.email {
+    margin: 0;
+    padding: 16px 16px;
+    border: none;
+    width: 40%;     
+}
+
+.btn-subscribe {
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 16px 16px;
+    width: 15%; 
+    cursor: pointer;
+}
+
 
 
 
@@ -201,4 +283,17 @@
         width: 100%;
         max-width: 270px;
     }
+
+    .plants-lover{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .plants-lover-description{
+        margin-top: -50px;
+    }
+
+    .line-break {
+            display: inline;
+        }
 }
