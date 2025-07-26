@@ -88,7 +88,7 @@
 
 /* plant items */
 .plants {
-    margin: 0 150px;
+    margin: 0 150px ;
     text-align: center;
 }
 
@@ -154,7 +154,7 @@
 .plants-lover {
     align-items: center;
     justify-content: space-between;
-    margin: 100px 150px;
+    margin: 150px 150px 50px;
     gap: 60px;
 }
 
@@ -239,7 +239,7 @@
     justify-content: center;
     align-items: center;
 
-    
+
 }
 
 .bloom {
@@ -250,7 +250,7 @@
 .ana {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/deal-ana.png);
     grid-area: ana-area;
-    
+
 }
 
 .zabo {
@@ -268,7 +268,7 @@
 
 .bloom h4,
 .ana h4 {
-font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 
@@ -382,6 +382,15 @@ footer {
     cursor: pointer;
 }
 
+.badge {
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    left: 50%;
+    
+    transform: translate(-90%,10%);
+
+}
 
 /* responsive for mobile */
 
@@ -447,7 +456,7 @@ footer {
         display: inline;
     }
 
-     .deals {
+    .deals {
         flex-direction: column;
         align-items: center;
         margin: 16px;
@@ -461,7 +470,7 @@ footer {
 
     .deals-card-container {
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "bloom-area"
             "ana-area"
             "zabo-area";
@@ -522,6 +531,10 @@ footer {
     .right img {
         width: 36px;
         height: 36px;
+    }
+
+    .badge{
+        display: none;
     }
 
 }
